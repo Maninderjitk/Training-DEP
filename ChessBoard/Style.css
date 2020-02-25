@@ -1,0 +1,39 @@
+
+
+.ChessBoard{
+    margin: auto;
+    height:800px;
+    width: 800px;
+    display: flex;
+    flex-direction:column;
+    border: 20px black;
+    border-style: solid;
+   
+}
+
+.White{
+    height:100px;
+    width: 100px; 
+    background-color: aliceblue;
+}
+
+.Black{
+    height:100px;
+    width: 100px;
+    background-color:Black;
+}
+
+.Row{
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width:934px){
+.ChessBoard {
+    height: 400px;
+    width: 400px;
+}
+.White, .Black{
+    height: 50px;
+    width: 50px;
+}
+}

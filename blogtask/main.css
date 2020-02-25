@@ -1,0 +1,161 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Quicksand', sans-serif;
+}
+.HeaderDiv{
+    text-align: center;
+    padding-top: 5px;
+    width: 200px;
+    height: 55px;
+    background-color:white;
+    color:black;
+    border-color:orange;
+    border-width: 3px;
+    border-style:solid;
+} 
+
+#p2{
+    font-size: 12px;
+    margin: 0;
+}
+label{
+    color:#273852;
+}
+    
+
+
+header{
+    background-color:#273852;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.afterheader{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    height: 60px;
+    width:100%;
+    
+}
+.afterheader2{
+    color:#273852;
+    font-size: 25px;
+    align-self: flex-start;
+}
+#mailBtn{
+    background-color: black;
+    color: white;
+    border-style: none;
+}
+footer{
+    background-color:#273852;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.B{
+    color: thistle;
+    width: 90%;
+    margin:10px auto 10px auto;
+   
+}
+.B1{
+
+    width: 90%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* position: relative;
+   background-color: thistle;
+    border: 0px;
+    border-bottom: 5px;
+    border-color: yellowgreen;
+    border-style: solid;*/
+
+}
+.innerdiv
+{
+    display:flex;
+}
+.B11{
+    height:200px;
+    width: 250px;
+    background-color:#d0d0d0 ;
+}
+.B12{
+    width: 750px;
+    /* height:  200px; */
+    padding-left: 20px;
+}
+#B122{
+    color: black;
+    margin-bottom: 13px;
+    height: 100px;
+    overflow: hidden;
+}
+#B121{
+  font-size: 11px;
+  color: black;
+  margin-top: 0px;
+}
+h2{
+    color:#273852;
+    margin: 0px 0px;
+   }
+#B123{
+    background-color:#e85f2d;
+    color: white;
+    height: 30px;
+    width: 150px;
+    border-width: 0;
+    
+}
+
+#emaildiv{
+   display:flex;
+}
+@media only screen and (max-width: 600px) {
+    .afterheader {
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .afterheader1{
+        order:2;
+    }
+    .afterheader2{
+        align-self: center;
+        order: 1;
+    }
+    .afterheader3{
+        order:3;
+    }
+    .B1
+    {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    .B12{
+        width: 80%;
+        padding-left: 0;
+    }
+    
+  }

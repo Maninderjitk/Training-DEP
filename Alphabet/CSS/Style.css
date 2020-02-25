@@ -1,0 +1,41 @@
+/* body{
+    padding: 0;
+    margin: 0;
+    
+} */
+.MLeft{
+    height: 350px;
+    width: 45px;
+    position: absolute;
+    left:700px;
+    background-color: aqua;
+    top:200px;
+}
+.M1{
+    height: 175px;
+    width: 45px;
+    position: absolute;
+    left:750px;
+    background-color:aqua;
+    top:200px;
+    transform: skew(30deg);
+    
+}
+.M2{
+    height: 175px;
+    width: 45px;
+    position: absolute;
+    left:850px;
+    background-color:aqua;
+    top:200px;
+    transform: skew(-30deg);
+    
+}
+.MRight{
+    height: 350px;
+    width: 45px;
+    position: absolute;
+    left:900px;
+    background-color: aqua;
+    top:200px;
+}
