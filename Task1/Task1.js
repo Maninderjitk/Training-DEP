@@ -8,15 +8,39 @@ function printArray(array){
   }
   // 3- http://www.codewars.com/kata/basic-mathematical-operations
   function basicOp(operation, value1, value2)
-{
-    return eval(value1+operation+value2);
-}
+  {
+    var result;
+    if(operation==="+"){
+      result=value1+value2;
+      return result;
+    }
+    if(operation==="-"){
+      result=value1-value2;
+      return result;
+    }
+    if(operation==="*"){
+      result=value1*value2;
+      return result;
+    }
+    if(operation==="/"){
+      result=value1/value2;
+      return result;
+    }
+  }
 //4 -http://www.codewars.com/kata/transportation-on-vacation
 function rentalCarCost(d) {
-    if(d<=2)
-    return d*40;
-    if(d>=3&& d<=6)
-    return d*40-20;
-    if(d>=5)
-    return d*40-50;
-  }
+    var noOfDays=d;
+    var amount;
+    if(noOfDays<=2){
+      amount=noOfDays*40
+      return amount;
+    }
+    if(noOfDays>=3&& noOfDays<=6){
+      amount=noOfDays*40-20;
+      return amount;
+    }
+    if(noOfDays>=5){ 
+      amount=noOfDays*40-50;
+      return amount;
+    }
+}
