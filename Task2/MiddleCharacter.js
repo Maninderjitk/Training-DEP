@@ -6,8 +6,7 @@ function getMiddle(s) {
     var result;
     if (len % 2 == 0) {
       result = s[mid - 1] + s[mid];
-    }
-    else{
+    }else{
         result = s[mid];
     }
      return result;
