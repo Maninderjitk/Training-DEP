@@ -1,5 +1,5 @@
 //4-http://www.codewars.com/kata/word-count
-function countWords(str) {
+function countWords(givenString) {
   givenString = givenString.trim();
   if (!givenString) {
     return 0;
