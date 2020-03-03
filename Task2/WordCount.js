@@ -1,4 +1,3 @@
-
 //4-http://www.codewars.com/kata/word-count
 function countWords(str) {
   givenString = givenString.trim();
