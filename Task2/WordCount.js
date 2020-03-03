@@ -1,11 +1,11 @@
 
 //4-http://www.codewars.com/kata/word-count
 function countWords(str) {
-  str = str.trim();
-  if (!str){
+  givenString = givenString.trim();
+  if (!givenString) {
     return 0;
-  } 
-  str=str.split(/[\s]+/);
-  var len=str.length;
-  return len;
+  }
+  givenString = givenString.split(/[\s]+/);
+  var stringLength = givenString.length;
+  return stringLength;
 }
