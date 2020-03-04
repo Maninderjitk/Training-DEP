@@ -1,6 +1,5 @@
 //4 -http://www.codewars.com/kata/transportation-on-vacation
-function rentalCarCost(d) {
-  var noOfDays = d;
+function rentalCarCost(noOfDays) {
   var amount;
   if (noOfDays >= 7) {
     amount = noOfDays * 40 - 50;
