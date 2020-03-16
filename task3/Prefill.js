@@ -10,3 +10,4 @@ function prefill(length, value) {
         return arr = new Array(Number(length)).fill(value);
     }
 }
+
