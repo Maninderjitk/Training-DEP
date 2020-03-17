@@ -36,7 +36,7 @@ Array.prototype.even = function () {
     let givenArr = this;
     let evenArr = [];
     givenArr.forEach((element, index) => {
-        if (element % 2 == 0) {
+        if (element % 2 === 0) {
             evenArr.push(element);
         }
     });

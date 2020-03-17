@@ -5,7 +5,7 @@ Object.prototype.hash = function (string) {
     let statement = this;
     for (let i = 0; i < arrLength; i++) {
         statement = statement[arr[i]];
-        if (statement == undefined) {
+        if (statement === undefined) {
             return undefined;
         }
     } return statement;
