@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="card-body">
+        <!-- {{user|json}} -->
+    <h4>{{(user?.firstName ) | titlecase }}</h4> 
+    <div>{{user?.isDeleted}}</div>
+     <!-- <div>Login Id  -  {{user?.login}}</div> --> 
+    <!-- <div>First Name  -  {{user?.firstName}}</div> -->
+    <!-- <div>{{user?.lastName}}</div> -->
+    <div>Date  -  {{user?.createdAt |date }}</div>    
+</div>
+</div>
