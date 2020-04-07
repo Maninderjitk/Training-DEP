@@ -1,0 +1,1 @@
+console.log('hello from  "helloAnother" file inside "Another" directory' );
