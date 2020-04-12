@@ -25,8 +25,7 @@ const routes: Routes = [
     loadChildren: ()=> import('./manage/manage.module').then(
         (file) => file.ManageModule
     )
-  },
-  {path:'manage/create',component:CreateFormComponent}
+  }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

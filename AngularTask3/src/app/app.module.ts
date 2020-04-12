@@ -10,7 +10,7 @@ import { DeletedModule } from './deleted/deleted.module';
 import { UsersServiceService } from './users-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ConcatPipe } from './concat.pipe';
-import {ReactiveFormsModule} from'@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,6 +23,7 @@ import {ReactiveFormsModule} from'@angular/forms';
     BrowserModule,
     ActiveModule,
     DeletedModule,
+    FormsModule,
     // ManageModule,
     AppRoutingModule,
     HttpClientModule,

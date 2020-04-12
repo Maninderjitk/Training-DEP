@@ -17,40 +17,40 @@ export class UserManageComponent implements OnInit {
   age: number;
   isDeleted: boolean;
   id: string;
-  createFormObject:string="create";
- 
+  createFormObject: string = "create";
 
 
-  userList:Observable<any>;
-  constructor(private serviceObj:UsersServiceService ,private router:Router) { }
-  
+
+  userList: Observable<any>;
+  constructor(private serviceObj: UsersServiceService, private router: Router) { }
+
   ngOnInit(): void {
     // this.userList=this.serviceObj.getUsers();
     this.showAllUsers();
   }
 
-    showDetails(id){
-      this.router.navigate(['manage', id]);
-    }
-  showAllUsers(){
-    this.serviceObj.getUsers()
-    .subscribe(
-     (result)=>{
-       this.userList=result as any;
-       console.log("All users API"+result);
-     },
-     (error)=>{
-       console.log("Error API"+ error);
-     },
-     ()=>{
-       console.log("Completed API")
-     }
-    );
+  showDetails(id) {
+    this.router.navigate(['manage', id]);
   }
-  editUser(userId){
+  showAllUsers() {
+    this.serviceObj.getUsers()
+      .subscribe(
+        (result) => {
+          this.userList = result as any;
+          console.log("All users API" + result);
+        },
+        (error) => {
+          console.log("Error API" + error);
+        },
+        () => {
+          console.log("Completed API")
+        }
+      );
+  }
+  editUser(userId) {
     console.log("in manage module");
     // this.router.navigate(['manage', id]);
-    this.router.navigate(['manage/edit/',userId]);
+    this.router.navigate(['manage/edit/', userId]);
   }
   createUser() {
     console.log("In CreateUser");

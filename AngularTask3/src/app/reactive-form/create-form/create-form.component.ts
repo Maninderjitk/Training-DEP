@@ -17,7 +17,7 @@ export class CreateFormComponent implements OnInit {
     age: new FormControl(''),
   });
 
-  constructor(private serviceObj:UsersServiceService) { }
+  constructor(private serviceObj: UsersServiceService) { }
 
   ngOnInit(): void {
     this.createUser();
@@ -36,7 +36,7 @@ export class CreateFormComponent implements OnInit {
 //     )
 //  }
 createUser() {
-  this. serviceObj.createUser(
+  this.serviceObj.createUser(
     this.createForm.value
   ).subscribe(
     (result) => {

@@ -1,6 +1,6 @@
 <div class="container">
-    <form class="container" FormGroup="createForm">
-    <div class="row">Firstt Name <input type="text"  FormControl="firstName"></div>
+    <form class="container" [formGroup]="createForm">
+    <div class="row">Firstt Name <input type="text"  formControlName="firstName"></div>
     <div class="row">Last Name <input type="text" formControlName="lastName" /></div>
     <div class="row">Login <input type="text" formControlName="login" /></div>
     <div class="row">Password <input type="text" formControlName="password" /></div>
@@ -9,6 +9,6 @@
     <div>
         <button class="btn btn-primary" (click)="createUser()">
             Submit
-        </button>
+        </button>y
     </div>
 </div>
