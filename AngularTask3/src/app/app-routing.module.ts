@@ -7,6 +7,7 @@ import { HomeCompComponent } from './home/home-comp/home-comp.component';
 import { UserDeletedComponent } from './deleted/user-deleted/user-deleted.component';
 import { LazyLoadedComponent } from './manage/lazy-loaded/lazy-loaded.component';
 import { CreateFormComponent } from './reactive-form/create-form/create-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 const routes: Routes = [
@@ -29,7 +30,7 @@ const routes: Routes = [
   {path:'manage/create',component:CreateFormComponent}
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),ReactiveFormsModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

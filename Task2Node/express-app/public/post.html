@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserPOst</title>
+    <link rel="stylesheet" href='/bootstrap'>
+    <script defer type="module" src="./javascripts/post.mjs"></script>
+    
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-4"><img src="./images/fb.png" alt="image not found"></div>
+        <div class="col-sm-4">
+            <strong class="email"></strong>
+        </div>
+        <div  class="col-sm-4">
+            <form action="http://localhost:3000/logout" method="POST">
+                <input class="btn btn-warning float-right" type="submit" value="Logout" />
+            </form>
+        </div>
+        
+    </div>
+    <div class="container ">
+        <form action="http://localhost:3000/api/posts/new" method="POST">
+            <input class="btn btn-primary float-right" type="submit" value="Create Post" />
+            <div><textarea name="message"></textarea></div>
+        </form>
+        
+    </div>
+    <ul class="posts p-4"></ul>
+        <template id="post">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title" id="id"></h4>
+                    <p class="message"></p>
+                </div>
+            </div>
+        </template>
+</body>
+
+</html>

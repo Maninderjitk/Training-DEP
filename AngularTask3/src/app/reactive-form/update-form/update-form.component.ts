@@ -10,7 +10,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./update-form.component.css']
 })
 export class UpdateFormComponent implements OnInit {
-  // [x: string]: any;
+  
   currentUser;
   userId;
 
@@ -19,11 +19,25 @@ export class UpdateFormComponent implements OnInit {
       Validators.required,
       // this.passwordValidator(new RegExp('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$')).bind(this)
     ]),
-    age: new FormControl(''),
+    age: new FormControl('')
   });
   constructor(private userServiceobj:UsersServiceService,private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+
+    this.updateForm.valueChanges.subscribe((changes) => {
+      console.log('Update Form valueChanges ', changes);
+    });
+
+    this.updateForm.statusChanges.subscribe((status) => {
+      console.log('Update Form statusChanges ', status, this.updateForm);
+    });
+
+
+
+
+
+
     this.route.params.subscribe(
       (param) => {
         this.userId = param['id'];
@@ -48,7 +62,7 @@ export class UpdateFormComponent implements OnInit {
   }
   updateUser(){
    this.userServiceobj.updateUser({
-    ...this.updateForm.value(),
+    ...this.updateForm.value,
      id:this.userId 
    }).subscribe(
      (result)=>{

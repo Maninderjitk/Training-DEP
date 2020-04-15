@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='/bootstrap'>
+    <script defer type="module" src="./javascripts/home.mjs"></script>
+    
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="./images/fb.png" alt="image not found">
+        </div>
+        <div  class="col-sm-4">
+            <strong class="email"></strong>
+        </div>
+        <div  class="col-sm-4">
+            <form action="http://localhost:3000/logout" method="POST">
+                <input class="btn btn-warning float-right" type="submit" value="Logout" />
+            </form>
+        </div>
+    </div>
+   
+    <div >
+        <h1>Welcome to FaceBook</h1>
+        <form action="http://localhost:3000/user_Profile" method="GET">
+            <input class="btn btn-primary " type="submit" value="Show Profile" />
+        </form>
+    </div>
+    
+</body>
+</html>

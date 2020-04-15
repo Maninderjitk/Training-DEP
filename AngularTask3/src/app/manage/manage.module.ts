@@ -6,13 +6,15 @@ import { LazyLoadedComponent } from './lazy-loaded/lazy-loaded.component';
 import { RouterModule } from '@angular/router';
 import { UpdateFormComponent } from '../reactive-form/update-form/update-form.component';
 import { CreateFormComponent } from '../reactive-form/create-form/create-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 const userManageRoutes=[{
   path:'',component:UserManageComponent,
   children:[
-   { path:':id',component:LazyLoadedComponent},
-   {path:'edit/id',component:UpdateFormComponent},
+    {path:'edit/:id',component:UpdateFormComponent},
+   { path:':id',component:LazyLoadedComponent}
+   
   //  {path:'create',component:CreateFormComponent}
   ]}
 ];
@@ -22,7 +24,7 @@ const userManageRoutes=[{
   declarations:[ UserManageComponent, LazyLoadedComponent],
   imports: [
     CommonModule,
-    
+    ReactiveFormsModule,
     // RouterModule
     RouterModule.forChild(userManageRoutes)
   ],

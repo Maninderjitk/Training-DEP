@@ -50,7 +50,7 @@ export class UserManageComponent implements OnInit {
   editUser(userId){
     console.log("in manage module");
     // this.router.navigate(['manage', id]);
-    this.router.navigate(['manage/edit/',userId]);
+    this.router.navigate(['manage/edit',userId]);
   }
   createUser() {
     console.log("In CreateUser");

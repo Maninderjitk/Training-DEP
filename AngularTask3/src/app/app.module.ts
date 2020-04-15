@@ -25,8 +25,9 @@ import {ReactiveFormsModule} from'@angular/forms';
     DeletedModule,
     // ManageModule,
     AppRoutingModule,
-    HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
+    
   ],
   providers: [UsersServiceService,HttpClientModule],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 <div class="container">
-    <form class="container" FormGroup="UpdateForm">
-        <div class="row">Password <input type="text" FormControl="password" /></div>
-        <div class="row">age <input type="text" FormControl="age" /></div>
+    <form class="container" [formGroup]="updateForm">
+        <div class="row">Password <input type="text" formControlName="password" /></div>
+        <div class="row">age <input type="text" formControlName="age" /></div>
     </form>
     <div class="container">
         <div> 
