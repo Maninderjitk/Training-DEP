@@ -1,0 +1,15 @@
+<div class="container clean">
+    <form class="container" [formGroup]="updateForm">
+        <div >Password <br> <input type="text" formControlName="password" /></div>
+        <div >Age <br><input type="text" formControlName="age" /></div>
+    </form>
+    <div class="container">
+        <div> 
+            <button class="btn btn-primary" (click)="updateUser()">
+                Submit
+            </button>
+            
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,12 @@
+<router-outlet></router-outlet>
+<div *ngFor="let user of userList">
+    
+    <div class="card" style="width: 40%;">
+      <div class="card-body">
+        <h5 class="card-title">{{user.firstName}} user</h5>
+        <button (click)="showDetails(user.id)" class="btn btn-primary">Details</button>
+        <!-- <a href="#" class="btn btn-primary">Details</a> -->
+      </div>
+    </div>
+  
+<div>
