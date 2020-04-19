@@ -1,4 +1,4 @@
-var url = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyA5wWhRZLi-8__WCZtGvmcpCtO6PtAgU_U&type=video&part=snippet&maxResults=15&q=";
+var url = "https://www.googleapis.com/youtube/v3/search?key=&type=video&part=snippet&maxResults=15&q=";
 
 
 var query, items = [], max = 0; var currentPage = 0;
