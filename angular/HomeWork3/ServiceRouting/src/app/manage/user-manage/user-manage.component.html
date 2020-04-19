@@ -4,14 +4,14 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">{{user.firstName}} {{user.lastName}}</h5>
-          <button (click)="editUser(user.id)" class="btn btn-outline-warning">Edit</button>
-          <button (click)="showDetails(user.id)" class="btn btn-primary" style="float:right">Details</button>
+          <button (click)="editUser(user.id)" class="btn btn-outline-warning">{{globalConst.EDIT}}</button>
+          <button (click)="showDetails(user.id)" class="btn btn-primary ButtonStyle" >{{globalConst.DETAILS}}</button>
         </div>
       </div>
     </div>
   </div>
   <div class="col-sm-6">
-    <button (click)="createUser()" class="btn btn-success" style="float:right">Create</button>
+    <button (click)="createUser()" class="btn btn-success ButtonStyle" >{{globalConst.CREATE}}</button>
     <router-outlet></router-outlet>
   </div>
 </div>

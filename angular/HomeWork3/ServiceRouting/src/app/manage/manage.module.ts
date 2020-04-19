@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { UpdateFormComponent } from '../reactive-form/update-form/update-form.component';
 import { CreateFormComponent } from '../reactive-form/create-form/create-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { StatusPipePipe } from './status-pipe.pipe';
 
 
 const userManageRoutes = [{
@@ -23,7 +24,7 @@ const userManageRoutes = [{
 
 
 @NgModule({
-  declarations: [UserManageComponent, LazyLoadedComponent],
+  declarations: [UserManageComponent, LazyLoadedComponent,StatusPipePipe],
   imports: [
     CommonModule,
     ReactiveFormsModule,

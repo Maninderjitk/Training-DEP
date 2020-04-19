@@ -1,9 +1,9 @@
 <div *ngFor="let user of userList|async">
   <div *ngIf="!user.isDeleted">
-    <div class="card" style="width: 70%;">
+    <div class="card Active" >
       <div class="card-body">
-        <h5 class="card-title">{{user.firstName}} user</h5>
-        <button (click)="update(user.id)" class="btn btn-danger" style="float:right">Deactivate</button>
+        <h5 class="card-title">{{user.firstName}} {{user.lastName}}</h5>
+        <button (click)="update(user.id)" class="btn btn-danger ActiveButton" >{{globalConst.DEACTIVATE}}</button>
       </div>
     </div>
   </div>

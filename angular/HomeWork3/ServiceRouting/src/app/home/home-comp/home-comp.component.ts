@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Constant} from '../../constant';
 
 @Component({
   selector: 'app-home-comp',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-comp.component.css']
 })
 export class HomeCompComponent implements OnInit {
-
+  globalConst;
   constructor() { }
 
   ngOnInit(): void {
+    this.globalConst=Constant;
   }
 
 }

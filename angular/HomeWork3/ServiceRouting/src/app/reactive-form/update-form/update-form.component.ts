@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, ValidatorFn, AbstractControl, AsyncValidatorFn } from '@angular/forms';
 import { UsersServiceService } from 'src/app/users-service.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { Constant } from 'src/app/constant';
 
 
 @Component({
@@ -13,7 +14,7 @@ export class UpdateFormComponent implements OnInit {
 
   currentUser;
   userId;
-
+  globalConst;
   updateForm: FormGroup = new FormGroup({
     password: new FormControl('', [
       Validators.required
@@ -23,7 +24,7 @@ export class UpdateFormComponent implements OnInit {
   constructor(private userServiceobj: UsersServiceService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-
+    this.globalConst=Constant;
     this.updateForm.valueChanges.subscribe((changes) => {
       console.log('Update Form valueChanges ', changes);
     });

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-// import { createSecureServer } from 'http2';
+import { Constant } from 'src/app/constant';
 import { UsersServiceService } from 'src/app/users-service.service';
 
 @Component({
@@ -16,11 +16,12 @@ export class CreateFormComponent implements OnInit {
     password: new FormControl(''),
     age: new FormControl(''),
   });
-
+  globalConst;
   constructor(private serviceObj: UsersServiceService) { }
 
   ngOnInit(): void {
     this.createUser();
+    this.globalConst=Constant;
   }
 
   createUser() {
