@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="card-body">
+        <h4>{{(user?.firstName )|titlecase }} {{user?.lastName |titlecase}}</h4>
+        <div [style.color]='user.isDeleted ? "green": "red" '> {{user?.isDeleted |statusPipe}}</div>
+        <div>{{globalConst.LOGINID}} - {{user?.login}}</div> 
+        <div>{{globalConst.FIRSTNAME}}  -  {{user?.firstName}}</div>
+        <div>{{globalConst.LASTNAME}}  -  {{user?.lastName}}</div>
+        <div>{{globalConst.AGE}}  -  {{user?.age}}</div>
+        <div>{{globalConst.DATE}} -  {{user?.createdAt |date }}</div>  
+    </div>
+</div>
